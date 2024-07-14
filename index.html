@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Chat-Bot</title>
+    <link rel="icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYYj9ncENKu76Ob0pOI4bInA01-cP45P7rPfpJLfs8Hi8vmyzHPwPHizoL_2lfOC-7aKQe8mQ_M3wtMAxuxxBSaxANI8YyxSMJsav9bjEcMfuIDTvL7iXAVuwKmnUYpReT0tHoNsdfOaJ7oJxcBcp4Qkmg1wzU5qR-mqPcCuV1xNUZ-pEiHzDcNdqi5V4/s320/pixelcut-export.jpeg">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+  </head>
+  <body>
+    <button class="chatbot-toggler">
+      <span class="material-symbols-rounded">mode_comment</span>           <!-- comment symbol on bottom right corner -->
+      <span class="material-symbols-outlined">close</span>                 <!-- close symbol on bottom right corner after chatbot is started -->
+    </button>
+    <div class="chatbot">
+      <header>
+        <h2>Chat-Bot</h2>
+        <span class="close-btn material-symbols-outlined">close</span>
+      </header>
+      <ul class="chatbox">
+        <li class="chat incoming">
+          <span class="material-symbols-outlined">smart_toy</span>            <!-- bot symbol -->
+          <p>Hey, What's Up👋 <br>How may I assist you?</p>
+        </li>
+      </ul>
+      <div class="chat-input">
+        <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>   <!-- creating a text area -->
+        <span id="send-btn" class="material-symbols-rounded">send</span>                     <!-- send symbol -->
+      </div>
+    </div>
+    <script src="script.js" defer></script>                 <!-- defer tells the browser to wait until the page has finished parsing before executing the script -->     
+  </body>
+</html>
